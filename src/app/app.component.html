@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-auth-modal *ngIf="modalOpened" (closeModal)="hideModal()" [loginPlaceHolder]="modalPlaceholder"></app-auth-modal>
+<button (click)="showModal()">Login</button>
+<router-outlet></router-outlet>
